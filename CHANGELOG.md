@@ -1,3 +1,9 @@
+# Intiface Engine v3.0.89 (2025/09/03)
+
+## Bugfixes
+
+- Fixes bug for cargo 1.89.0 (c24e10642 2025-06-23)
+
 # Intiface Engine v3.0.8 (2025/04/20)
 
 - Update to Buttplug v9.0.8
