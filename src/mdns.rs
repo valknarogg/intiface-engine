@@ -16,7 +16,7 @@ impl IntifaceMdns {
 
     let (_responder, task) = libmdns::Responder::with_default_handle().unwrap();
     let _svc = _responder.register(
-      "_intiface_engine._tcp",
+      String::from("_intiface_engine._tcp"),
       instance_name,
       12345,
       &["path=/"],
