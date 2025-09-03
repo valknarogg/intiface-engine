@@ -239,7 +239,7 @@ impl ButtplugRemoteServer {
     }
   }
 
-  pub fn event_stream(&self) -> impl Stream<Item = ButtplugRemoteServerEvent> {
+  pub fn event_stream<'a>(&self) -> impl Stream<Item = ButtplugRemoteServerEvent> + use<'a> {
     convert_broadcast_receiver_to_stream(self.event_sender.subscribe())
   }
 
